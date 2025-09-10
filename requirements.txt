@@ -1,0 +1,39 @@
+# Core LLM packages
+ollama==0.4.4
+openai==1.35.0  # 新增：支援 OpenAI API（選修）
+langchain==0.3.13
+langchain-community==0.3.13
+langchain-ollama==0.2.2
+
+# Web UI and API
+streamlit==1.41.0
+gradio==5.9.1
+fastapi==0.115.6
+uvicorn==0.34.0
+
+# RAG components
+faiss-cpu==1.9.0.post1
+chromadb==0.5.23
+pypdf==5.1.0
+beautifulsoup4==4.12.3
+sentence-transformers==3.3.1
+tiktoken==0.8.0
+
+# Data processing
+pandas==2.2.3
+numpy==2.2.1
+python-dotenv==1.0.1
+pydantic==2.10.4
+
+# Development tools
+jupyter==1.1.1
+ipython==8.31.0
+black==24.10.0
+pytest==8.3.4
+
+# Optional - for Week 9+
+langraph==0.2.61
+transformers==4.47.1
+peft==0.14.0
+accelerate==1.2.1
+bitsandbytes==0.45.0
