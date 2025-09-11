@@ -2,6 +2,10 @@
 NCU BM 2025 Fall - Applications of Local Large Language Models
 企業管理學系 高年級/研究所 選修課程
 
+## ⚠️ 重要說明
+
+> **注意**：本課程內容由 Claude Opus 4.1 和 Gemini 2.5 Pro 協作產生，將會持續修正。經過老師親自驗證過後會加上標註。
+
 ## 📚 課程簡介
 
 本課程專為企管系學生設計，無需程式背景，透過實作學習如何在商業環境中應用大型語言模型（LLM）。課程強調實用性，每週都會學習可立即應用於職場的 AI 工具。
@@ -197,31 +201,13 @@ python week01_setup/01_hello_llm.py
 - 📚 《Building LLM Applications》
 - 📚 Chain-of-Thought Prompting Papers
 
-### 社群支援
-- 💬 課程 Discord：[加入連結]
-- 📧 課程信箱：course@example.com
-- 🕐 Office Hour：週四 14:00-16:00
-
-## 🎯 作業繳交
-
-### 繳交方式（適合初學者）
-1. 完成每週實作練習
-2. 截圖記錄執行結果
-3. 撰寫簡短心得（200-300字）
-4. 上傳到 Google Classroom 或 Email
-5. 檔案命名：`學號_姓名_week{N}.pdf`
-
-### 評分標準
-- 實作完成度 (40%)
-- 理解程度（心得與問答） (30%)
-- 期中/期末專案 (20%)
-- 課堂參與 (10%)
+### 參考資源
+- 📂 [iSpan LLM 課程資源](https://github.com/lzrong0203/iSpan_LLM09) - 包含完整 PDF 投影片與範例程式碼
 
 ## ⚠️ 注意事項
 
 ### 學術誠信
-- 作業須獨立完成
-- 可討論但不可抄襲
+- 專案由小組完成
 - 引用須註明來源
 
 ### 硬體限制處理
@@ -278,13 +264,11 @@ pip install -r requirements.txt -i https://pypi.org/simple
 
 ## 👨‍🏫 講師資訊
 
-- **講師**：[講師姓名]
-- **聯絡方式**：instructor@ncu.edu.tw
-- **Office Hour**：週四 14:00-16:00
-- **辦公室**：[辦公室位置]
+- **講師**：[Steve Lai]
+- **聯絡方式**：lzrong0203@gmail.com
 
 ---
 
-**Last Updated**: 2025-01-10
+**Last Updated**: 2025-09-11
 
-**Course Version**: 1.0.0
+**Course Version**: 1.0.1
