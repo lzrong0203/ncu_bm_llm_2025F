@@ -13,9 +13,8 @@ NCU BM 2025 Fall - Applications of Local Large Language Models
 ### 課程特色
 - 💼 **商業導向**：聚焦行銷、客服、人資、財務等商業應用
 - 🎯 **零程式門檻**：提供簡化程式碼，專注於理解概念與應用
-- 💻 **筆電友好**：使用 Gemma (2B/9B) 輕量級模型
-- 📊 **實務專案**：每週完成可用於履歷的商業 AI 專案
-- 📝 **簡化範例**：提供簡化版程式碼（`*_simple.py`），方便理解核心概念
+- 💻 **筆電友好**：使用 Gemma3 (270m/1B) 輕量級模型
+- 📊 **實務專案**：可完成可用於履歷的商業 AI 專案
 
 ## 🗂️ 課程結構
 
@@ -61,8 +60,8 @@ ncu_bm_llm_2025F/
 # 2. 解壓縮到桌面
 # 3. 下載並安裝 Ollama：https://ollama.com/download/windows
 # 4. 開啟命令提示字元，執行：
-ollama pull gemma2:2b                 # 超輕量，適合展示
-ollama pull gemma2:9b-instruct-q4_0  # 平衡效能版
+ollama pull gemma3:270m                 # 超輕量，適合展示
+ollama pull gemma3:1b  # 平衡效能版
 ollama pull llama3.2:3b              # Meta 最新版（備選）
 ```
 
@@ -73,7 +72,7 @@ ollama pull llama3.2:3b              # Meta 最新版（備選）
 # 2. 安裝 Ollama
 brew install ollama
 # 3. 下載模型
-ollama pull gemma2:2b
+ollama pull gemma3:270m  
 ```
 
 ### 3. 驗證安裝
@@ -83,7 +82,7 @@ ollama pull gemma2:2b
 ollama list
 
 # 測試範例程式（自動執行所有範例）
-python week01_setup/01_hello_llm_simple.py
+python week01_setup/01_hello_llm.py
 ```
 
 ## 📅 13週課程大綱
@@ -96,7 +95,7 @@ python week01_setup/01_hello_llm_simple.py
   - Ollama 圖形化安裝（10分鐘完成）
   - 運行 Gemma 對話
   - 客服機器人原型
-- **範例程式**：`01_hello_llm_simple.py`（簡單對話、串流、溫度控制）
+- **範例程式**：`01_hello_llm.py`（簡單對話、串流、溫度控制）
 
 #### Week 2: LLM 概念與原理 ✅
 - **理論內容**：參考 `LLM_No_framework.pdf`
@@ -115,13 +114,13 @@ python week01_setup/01_hello_llm_simple.py
   - 結構化輸出（JSON、CSV）
   - 智慧表單處理
 - **範例程式**：
-  - `01_prompting_basics_simple.py` - 基礎技巧展示
-  - `02_structured_output_simple.py` - 結構化資料處理
-  - `03_smart_form_processor_simple.py` - 商業表單自動化
+  - `01_prompting_basics.py` - 基礎技巧展示
+  - `02_structured_output.py` - 結構化資料處理
+  - `03_smart_form_processor.py` - 商業表單自動化
 
 #### Week 4: 專案提案 📋
 - **活動內容**：
-  - 學生分組（3-4人一組）
+  - 學生分組（ 2-3人一組）
   - 提出期末專案構想
   - 專案範圍討論
   - 技術可行性評估
@@ -176,29 +175,22 @@ python week01_setup/01_hello_llm_simple.py
 
 ## 💻 程式碼說明
 
-### 簡化版 vs 完整版
-
-| 版本 | 檔名格式 | 特點 | 適用場景 |
-|------|---------|------|---------|
-| 簡化版 | `*_simple.py` | 直接執行、無互動、展示核心功能 | 課堂展示、快速理解 |
-| 完整版 | `*.py` | 互動式選單、多功能、完整體驗 | 深入學習、自主探索 |
-
 ### Week 1 程式碼 - 商業 AI 助理
 
 | 檔案 | 功能說明 | 商業應用 |
 |------|---------|----------|
-| `01_hello_llm_simple.py` | 基本對話、串流、溫度測試 | 客服對話基礎 |
-| `02_personal_assistant_simple.py` | 有記憶的助理、對話儲存 | 個人化服務 |
-| `03_ollama_basics_simple.py` | API 功能展示、效能測試 | 系統整合 |
+| `01_hello_llm.py` | 基本對話、串流、溫度測試 | 客服對話基礎 |
+| `02_personal_assistant.py` | 有記憶的助理、對話儲存 | 個人化服務 |
+| `03_ollama_basics.py` | API 功能展示、效能測試 | 系統整合 |
 
 ### Week 3 程式碼 - Prompt Engineering
 
 | 檔案 | 功能說明 | 商業應用 |
 |------|---------|----------|
-| `01_prompting_basics_simple.py` | Zero-shot、Few-shot、CoT 等技巧 | 文案生成、決策分析 |
-| `02_structured_output_simple.py` | JSON/CSV 輸出、批次處理 | 訂單處理、報表生成 |
-| `03_smart_form_processor_simple.py` | 情感分析、意圖分類、優先級 | 客服自動化、分流系統 |
-| `04_openai_agent_basic_simple.py` | 本地vs雲端模型比較 | 成本效益分析 |
+| `01_prompting_basics.py` | Zero-shot、Few-shot、CoT 等技巧 | 文案生成、決策分析 |
+| `02_structured_output.py` | JSON/CSV 輸出、批次處理 | 訂單處理、報表生成 |
+| `03_smart_form_processor.py` | 情感分析、意圖分類、優先級 | 客服自動化、分流系統 |
+| `04_openai_agent_basic.py` | 本地vs雲端模型比較 | 成本效益分析 |
 
 ## 📖 學習資源
 
@@ -220,10 +212,10 @@ python week01_setup/01_hello_llm_simple.py
 ### 執行簡化版程式
 ```bash
 # 直接執行，自動完成所有範例
-python week01_setup/01_hello_llm_simple.py
+python week01_setup/01_hello_llm.py
 
 # 不需要任何互動，適合課堂展示
-python week02_prompt_engineering/01_prompting_basics_simple.py
+python week02_prompt_engineering/01_prompting_basics.py
 ```
 
 ### 常見問題
@@ -244,8 +236,8 @@ ollama list
 - 適合課堂快速展示
 
 #### Q3: 如何選擇適合的模型？
-- **gemma2:2b**：最輕量，適合展示和學習
-- **gemma2:9b-instruct-q4_0**：效果較好，需要較多資源
+- **gemma3:1b**：最輕量，適合展示和學習
+- **gemma3:**：效果較好，需要較多資源
 - **llama3.2:3b**：Meta 最新模型，平衡選擇
 
 ## 📊 課程進度追蹤
@@ -280,4 +272,4 @@ ollama list
 ---
 
 **Last Updated**: 2025-09-17
-**Course Version**: 1.1.0
+**Course Version**: 1.2.0
