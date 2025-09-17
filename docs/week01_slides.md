@@ -318,7 +318,7 @@ python week01_setup/03_ollama_basics.py
 
 ### 聯絡資訊
 
-- 📧 課程問題：course@example.com
+- 📧 講師信箱：lzrong0203@gmail.com
 - 💻 程式碼：github.com/lzrong0203/ncu_bm_llm_2025F
 - 📅 Office Hour：週四 14:00-16:00
 
