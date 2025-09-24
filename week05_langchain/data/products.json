@@ -1,0 +1,192 @@
+[
+  {
+    "id": "LAPTOP001",
+    "name": "ProBook 15",
+    "category": "筆記型電腦",
+    "price": 35999,
+    "stock": 50,
+    "description": "高效能商務筆電，適合專業人士使用",
+    "features": [
+      "Intel Core i7-1355U",
+      "16GB DDR5 RAM",
+      "512GB NVMe SSD",
+      "15.6吋 FHD IPS螢幕",
+      "Windows 11 Pro",
+      "指紋辨識",
+      "背光鍵盤"
+    ],
+    "warranty": "一年原廠保固",
+    "rating": 4.5
+  },
+  {
+    "id": "LAPTOP002",
+    "name": "UltraBook Air",
+    "category": "筆記型電腦",
+    "price": 42999,
+    "stock": 30,
+    "description": "超輕薄設計，續航力超強",
+    "features": [
+      "Apple M2晶片",
+      "8GB統一記憶體",
+      "256GB SSD",
+      "13.3吋 Retina顯示器",
+      "macOS",
+      "18小時電池續航",
+      "1.24公斤超輕量"
+    ],
+    "warranty": "一年原廠保固",
+    "rating": 4.7
+  },
+  {
+    "id": "PHONE001",
+    "name": "SmartPhone X Pro",
+    "category": "智慧手機",
+    "price": 32999,
+    "stock": 100,
+    "description": "旗艦級5G智慧手機",
+    "features": [
+      "6.7吋 AMOLED螢幕",
+      "Snapdragon 8 Gen 3",
+      "12GB RAM + 256GB ROM",
+      "5000mAh電池",
+      "三鏡頭相機系統",
+      "無線充電",
+      "IP68防水防塵"
+    ],
+    "warranty": "一年原廠保固",
+    "rating": 4.6
+  },
+  {
+    "id": "PHONE002",
+    "name": "SmartPhone SE",
+    "category": "智慧手機",
+    "price": 15999,
+    "stock": 150,
+    "description": "高CP值中階手機",
+    "features": [
+      "6.4吋 FHD+螢幕",
+      "MediaTek Dimensity 8100",
+      "8GB RAM + 128GB ROM",
+      "4500mAh電池",
+      "雙鏡頭相機",
+      "快速充電",
+      "雙SIM卡"
+    ],
+    "warranty": "一年原廠保固",
+    "rating": 4.3
+  },
+  {
+    "id": "WATCH001",
+    "name": "FitWatch Pro",
+    "category": "智慧手錶",
+    "price": 8999,
+    "stock": 75,
+    "description": "專業健康監測智慧手錶",
+    "features": [
+      "1.4吋 AMOLED觸控螢幕",
+      "心率/血氧監測",
+      "GPS定位",
+      "50米防水",
+      "7天電池續航",
+      "睡眠追蹤",
+      "100+運動模式"
+    ],
+    "warranty": "一年原廠保固",
+    "rating": 4.4
+  },
+  {
+    "id": "WATCH002",
+    "name": "FitWatch Lite",
+    "category": "智慧手錶",
+    "price": 3999,
+    "stock": 120,
+    "description": "入門級健康手環",
+    "features": [
+      "1.1吋彩色螢幕",
+      "心率監測",
+      "計步器",
+      "IP67防水",
+      "14天電池續航",
+      "睡眠監測",
+      "訊息提醒"
+    ],
+    "warranty": "一年原廠保固",
+    "rating": 4.2
+  },
+  {
+    "id": "EARPHONE001",
+    "name": "SoundBuds Pro",
+    "category": "無線耳機",
+    "price": 4999,
+    "stock": 200,
+    "description": "主動降噪真無線耳機",
+    "features": [
+      "ANC主動降噪",
+      "通透模式",
+      "30小時總續航",
+      "快速充電",
+      "IPX4防水",
+      "觸控操作",
+      "藍牙5.3"
+    ],
+    "warranty": "一年原廠保固",
+    "rating": 4.5
+  },
+  {
+    "id": "EARPHONE002",
+    "name": "SportBuds",
+    "category": "無線耳機",
+    "price": 2499,
+    "stock": 180,
+    "description": "運動型無線耳機",
+    "features": [
+      "耳掛式設計",
+      "IPX7防水",
+      "8小時續航",
+      "快速配對",
+      "穩固配戴",
+      "環境音模式",
+      "藍牙5.2"
+    ],
+    "warranty": "一年原廠保固",
+    "rating": 4.3
+  },
+  {
+    "id": "TABLET001",
+    "name": "TabMax Pro",
+    "category": "平板電腦",
+    "price": 28999,
+    "stock": 40,
+    "description": "專業創作平板",
+    "features": [
+      "12.9吋 2K顯示器",
+      "Snapdragon 8 Gen 2",
+      "8GB RAM + 256GB ROM",
+      "8000mAh電池",
+      "支援手寫筆",
+      "四揚聲器",
+      "Face ID解鎖"
+    ],
+    "warranty": "一年原廠保固",
+    "rating": 4.6
+  },
+  {
+    "id": "CAMERA001",
+    "name": "ActionCam 4K",
+    "category": "運動相機",
+    "price": 12999,
+    "stock": 60,
+    "description": "4K運動相機",
+    "features": [
+      "4K 60fps錄影",
+      "防手震",
+      "10米防水",
+      "2吋觸控螢幕",
+      "語音控制",
+      "WiFi連接",
+      "1350mAh電池"
+    ],
+    "warranty": "一年原廠保固",
+    "rating": 4.4
+  }
+]
