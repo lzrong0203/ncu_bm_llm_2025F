@@ -4,7 +4,7 @@ NCU BM 2025 Fall - Applications of Local Large Language Models
 
 ## ⚠️ 重要說明
 
-> **注意**：本課程內容由 Claude Opus 4.1 協作產生，將會持續修正。
+> **注意**：本課程內容由 Claude Opus 4.1 與 gpt5-codex 協作產生，將會持續修正。
 
 ## 📚 課程簡介
 
