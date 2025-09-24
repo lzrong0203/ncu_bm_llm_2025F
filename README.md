@@ -33,7 +33,9 @@ ncu_bm_llm_2025F/
 │   └── rag_test.py             # Gemma3:1b RAG + baseline 比較
 ├── docs/                        # 課程文檔
 │   ├── week01_slides.md
-│   └── week03_slides.md
+│   ├── week02_slides.md
+│   ├── week03_slides.md
+│   └── week04_slides.md
 ├── LLM_No_framework.pdf        # Week 2 概念投影片
 ├── utils/                       # 工具函數
 ├── requirements.txt             # Python 套件需求
@@ -140,6 +142,7 @@ python week03_prompt_engineering/01_prompting_basics.py
   - 專案範圍討論
   - 技術可行性評估
 - **課堂示範**：`week04_rag/rag_test.py` - 使用 Gemma3:1b 建立 RAG 小型知識庫
+  - Multi-Agent Debate 主題提問，對比有／無 RAG 的回答品質
 - **提案要求**：
   - 明確的商業問題
   - LLM 應用方案
@@ -225,6 +228,7 @@ python week03_prompt_engineering/01_prompting_basics.py
 - Week 1: `docs/week01_slides.md`
 - Week 2: `LLM_No_framework.pdf`（概念講解）
 - Week 3: `docs/week03_slides.md`（實作指南）
+- Week 4: `docs/week04_slides.md`（RAG 暖身與提案）
 
 ### 參考資源
 - 📂 [Dr. Steve Lai 的 GitHub](https://github.com/lzrong0203/iSpan_LLM09)

@@ -7,7 +7,7 @@
 ```mermaid
 graph TD
     A[開始選擇模型] --> B{你的電腦 RAM?}
-    B -->|8GB| C[Gemma 2:2B<br/>Llama 3.2:3B]
+    B -->|8GB| C[Gemma 3:1B<br/>Llama 3.2:3B]
     B -->|16GB| D[Gemma 2:9B<br/>Llama 3.2:11B]
     B -->|32GB+| E[Mixtral 8x7B<br/>Qwen 2.5:32B]
     
@@ -24,23 +24,25 @@ graph TD
 
 ### 1. **Google Gemma 系列** ⭐ 課程首選
 
-#### Gemma 2 (現有穩定版)
+#### Gemma 3 (本課程預設)
 ```bash
 # 安裝指令
-ollama pull gemma2:2b          # 超輕量 (1.4GB)
-ollama pull gemma2:9b-instruct-q4_0  # 最推薦 (5.5GB)
-ollama pull gemma2:27b-q4_0    # 進階版 (16GB)
+ollama pull gemma3:270m    # Demo / 低資源環境
+ollama pull gemma3:1b      # 課程預設模型
+ollama pull gemma3:4b      # 進階推理 (可選)
 ```
 
 **特色**：
-- ✅ 中文支援優異
-- ✅ 指令跟隨能力強
-- ✅ 商業友好授權
+- ✅ 本地端部署友好，1B 即可支援 RAG 實作
+- ✅ 中文與英文表現平衡，適合台灣商業場景
+- ✅ 支援工具調用、長上下文（128K tokens）
 
-#### Gemma 3 (預計 2025 Q3 發布)
-- 🌐 **內建網路搜尋**：可即時查詢最新資訊
-- 🎨 **多模態支援**：圖片理解能力
-- ⚡ **效能提升 2x**：更快的推理速度
+#### Gemma 2 (長期支援版)
+```bash
+ollama pull gemma2:2b                  # 超輕量備用
+ollama pull gemma2:9b-instruct-q4_0    # 需要較高精度時使用
+```
+- 💡 若硬體資源足夠，可作為進階專案的替代模型
 
 ---
 
@@ -112,13 +114,13 @@ ollama pull qwen2.5-coder:7b   # 程式專用 (4.7GB)
 | **客服對話** | Llama 3.2:3B | 8GB | 快速回應 |
 | **行銷文案** | Gemma2:9B | 16GB | 創意平衡 |
 | **財務分析** | Mistral:7B | 16GB | 數據處理 |
-| **市場研究** | Gemma3:9B* | 16GB | 網路搜尋 |
+| **市場研究** | Gemma3:4B | 16GB | 長上下文 + RAG |
 | **中文文檔** | Qwen2.5:7B | 16GB | 中文最佳 |
 | **產品圖片** | Llama3.2:11B-vision | 16GB | 圖片理解 |
 | **程式輔助** | Qwen2.5-coder:7B | 16GB | 程式生成 |
 | **研究論文** | Phi3.5:14B | 32GB | 長文本 |
 
-*Gemma3 預計 2025 Q3 發布
+*Gemma3 已於 2024 年釋出，建議搭配 16GB RAM
 
 ---
 
@@ -128,7 +130,7 @@ ollama pull qwen2.5-coder:7b   # 程式專用 (4.7GB)
 ```bash
 # 從最輕量開始
 ollama pull llama3.2:3b
-ollama pull gemma2:2b
+ollama pull gemma3:270m
 ```
 - 熟悉基本對話
 - 練習 Prompt 技巧
@@ -137,7 +139,7 @@ ollama pull gemma2:2b
 ### 進階應用 (第5-8週)
 ```bash
 # 升級到中型模型
-ollama pull gemma2:9b-instruct-q4_0
+ollama pull gemma3:1b
 ollama pull qwen2.5:7b  # 中文專案
 ```
 - RAG 系統開發
@@ -216,7 +218,7 @@ def select_model(task_type):
 ```bash
 #!/bin/bash
 # 適合 16GB RAM 的最佳組合
-ollama pull gemma2:9b-instruct-q4_0  # 主力模型
+ollama pull gemma3:1b  # 主力模型
 ollama pull llama3.2:3b              # 快速回應
 ollama pull qwen2.5:7b               # 中文處理
 ollama pull llama3.2:11b-vision-q4_0 # 圖片分析（選配）
