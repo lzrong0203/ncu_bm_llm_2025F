@@ -29,6 +29,8 @@ ncu_bm_llm_2025F/
 │   ├── 02_structured_output.py  # 結構化輸出
 │   ├── 03_smart_form_processor.py  # 智慧表單處理
 │   └── 04_openai_agent_basic.py  # API 比較
+├── week04_rag/                 # Week 4: RAG 實作暖身
+│   └── rag_test.py             # Gemma3:1b RAG + baseline 比較
 ├── docs/                        # 課程文檔
 │   ├── week01_slides.md
 │   └── week03_slides.md
@@ -51,6 +53,18 @@ ncu_bm_llm_2025F/
 - Python 3.9+
 - Git
 - Ollama
+
+#### Python 虛擬環境（Windows/Mac 通用）
+建議在專案根目錄建立獨立虛擬環境，避免套件汙染系統環境。
+
+```bash
+cd ncu_bm_llm_2025F
+python -m venv .venv
+source .venv/bin/activate  # Windows PowerShell: .\.venv\\Scripts\\Activate.ps1
+pip install -r requirements.txt
+```
+
+> 提醒：`.venv/`（或 `venv/`）為本機環境資料夾，不需提交到 Git。若環境毀損，可刪除整個資料夾並重新建立。
 
 ### 2. 安裝步驟（簡化版）
 
@@ -83,6 +97,7 @@ ollama list
 
 # 測試範例程式（自動執行所有範例）
 python week01_setup/01_hello_llm.py
+python week03_prompt_engineering/01_prompting_basics.py
 ```
 
 ## 📅 13週課程大綱
@@ -124,6 +139,7 @@ python week01_setup/01_hello_llm.py
   - 提出期末專案構想
   - 專案範圍討論
   - 技術可行性評估
+- **課堂示範**：`week04_rag/rag_test.py` - 使用 Gemma3:1b 建立 RAG 小型知識庫
 - **提案要求**：
   - 明確的商業問題
   - LLM 應用方案
@@ -192,6 +208,12 @@ python week01_setup/01_hello_llm.py
 | `03_smart_form_processor.py` | 情感分析、意圖分類、優先級 | 客服自動化、分流系統 |
 | `04_openai_agent_basic.py` | 本地vs雲端模型比較 | 成本效益分析 |
 
+### Week 4 程式碼 - RAG 暖身
+
+| 檔案 | 功能說明 | 商業應用 |
+|------|---------|----------|
+| `week04_rag/rag_test.py` | Gemma3:1b RAG 示範（含無 RAG 比較） | 客服知識庫、內部文件搜尋 |
+
 ## 📖 學習資源
 
 ### 官方文檔
@@ -215,7 +237,10 @@ python week01_setup/01_hello_llm.py
 python week01_setup/01_hello_llm.py
 
 # 不需要任何互動，適合課堂展示
-python week02_prompt_engineering/01_prompting_basics.py
+python week03_prompt_engineering/01_prompting_basics.py
+
+# Week 4 RAG 暖身示範（需準備 data/ PDF 或使用內建示範；同時比較有/無 RAG）
+python week04_rag/rag_test.py
 ```
 
 ### 常見問題
@@ -236,8 +261,8 @@ ollama list
 - 適合課堂快速展示
 
 #### Q3: 如何選擇適合的模型？
-- **gemma3:1b**：最輕量，適合展示和學習
-- **gemma3:**：效果較好，需要較多資源
+- **gemma3:270m**：超輕量，適合課堂即時示範
+- **gemma3:1b**：課程範例預設使用的模型，平衡效能與需求
 - **llama3.2:3b**：Meta 最新模型，平衡選擇
 
 ## 📊 課程進度追蹤
@@ -271,5 +296,5 @@ ollama list
 
 ---
 
-**Last Updated**: 2025-09-17
+**Last Updated**: 2025-09-24
 **Course Version**: 1.2.0

@@ -11,7 +11,7 @@ def example1_simple_chat():
     print("\n範例1: 簡單對話")
     print("=" * 50)
 
-    model = "gemma2:2b"  # 使用輕量模型作為範例
+    model = "gemma3:1b"  # 使用輕量模型作為範例
     prompt = "介紹一下你自己，用繁體中文回答"
 
     response = ollama.chat(
@@ -31,7 +31,7 @@ def example2_streaming_chat():
     print("\n範例2: 串流對話")
     print("=" * 50)
 
-    model = "gemma2:2b"
+    model = "gemma3:1b"
     prompt = "什麼是機器學習？請用一句話解釋"
 
     print(f"提示詞: {prompt}")

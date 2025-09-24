@@ -25,7 +25,7 @@ def example2_generate_api():
     print("\n範例2: Generate API 文字生成")
     print("=" * 50)
 
-    model = "gemma:2b"
+    model = "gemma3:1b"
     prompts = [
         "完成這個句子：人工智慧的未來",
         "解釋什麼是深度學習："
@@ -45,7 +45,7 @@ def example3_chat_api():
     print("\n範例3: Chat API 對話模式")
     print("=" * 50)
 
-    model = "gemma:2b"
+    model = "gemma3:1b"
 
     # 建立對話歷史
     messages = [
@@ -69,7 +69,7 @@ def example4_embeddings():
     print("\n範例4: Embeddings 向量生成")
     print("=" * 50)
 
-    model = "gemma:2b"
+    model = "gemma3:1b"
     texts = [
         "機器學習是人工智慧的一個分支",
         "深度學習使用神經網路",
@@ -102,7 +102,7 @@ def example5_model_options():
     print("\n範例5: 不同 Temperature 的效果")
     print("=" * 50)
 
-    model = "gemma:2b"
+    model = "gemma3:1b"
     prompt = "寫一個關於 AI 的句子"
 
     temperatures = [0.1, 0.5, 0.9]
@@ -119,7 +119,7 @@ def example6_performance():
     print("\n範例6: 效能基準測試")
     print("=" * 50)
 
-    model = "gemma:2b"
+    model = "gemma3:1b"
     prompt = "Hello, how are you?"
 
     start = time.time()
@@ -148,7 +148,7 @@ def main():
     try:
         models = ollama.list()
         if not models['models']:
-            print("請先安裝模型：ollama pull gemma:2b")
+            print("請先安裝模型：ollama pull gemma3:1b")
             return
         print(f"已連接 Ollama，共 {len(models['models'])} 個模型可用")
     except Exception as e:

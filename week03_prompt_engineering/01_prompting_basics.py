@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Week 2 - Lesson 1: Prompt Engineering 基礎
+Week 3 - Lesson 1: Prompt Engineering 基礎
 Zero-shot, Few-shot, Chain-of-Thought 技巧範例
 """
 
@@ -12,7 +12,7 @@ def example1_zero_shot():
     print("\n範例1: Zero-shot Prompting")
     print("=" * 50)
 
-    model = "gemma:2b"
+    model = "gemma3:1b"
 
     # 情感分析
     prompt1 = """判斷以下評論的情感（正面/負面/中性）：
@@ -41,7 +41,7 @@ def example2_few_shot():
     print("\n範例2: Few-shot Prompting")
     print("=" * 50)
 
-    model = "gemma:2b"
+    model = "gemma3:1b"
 
     # 格式轉換範例
     prompt = """將日期轉換為標準格式 (YYYY-MM-DD)：
@@ -85,7 +85,7 @@ def example3_chain_of_thought():
     print("\n範例3: Chain-of-Thought Prompting")
     print("=" * 50)
 
-    model = "gemma:2b"
+    model = "gemma3:1b"
 
     prompt = """解決以下數學問題，請一步步思考：
 
@@ -109,7 +109,7 @@ def example4_zero_shot_cot():
     print("\n範例4: Zero-shot Chain-of-Thought")
     print("=" * 50)
 
-    model = "gemma:2b"
+    model = "gemma3:1b"
 
     prompt = """一家餐廳有 12 張桌子。每張桌子可坐 4 人。
 今天有 3 個 15 人的團體預約。
@@ -127,7 +127,7 @@ def example5_technique_comparison():
     print("\n範例5: 技巧效果比較")
     print("=" * 50)
 
-    model = "gemma:2b"
+    model = "gemma3:1b"
     task = "分析文字：遠端工作提供彈性但也帶來溝通挑戰"
 
     # Zero-shot
