@@ -31,6 +31,9 @@ ncu_bm_llm_2025F/
 │   └── 04_openai_agent_basic.py  # API 比較
 ├── week04_rag/                 # Week 4: RAG 實作暖身
 │   └── rag_test.py             # Gemma3:1b RAG + baseline 比較
+├── week05_langchain/           # Week 5: LangChain + HF Transformers RAG
+│   ├── langchain_rag_HF_transformers.ipynb  # 完整 RAG 實作
+│   └── transformer_test.ipynb  # Transformers 基礎測試
 ├── docs/                        # 課程文檔
 │   ├── week01_slides.md
 │   ├── week02_slides.md
@@ -150,10 +153,19 @@ python week03_prompt_engineering/01_prompting_basics.py
 
 ### 第二階段：進階應用（Week 5-9）
 
-#### Week 5: RAG 系統入門
-- 文檔處理基礎
-- 向量化概念
-- 簡單 RAG 實作
+#### Week 5: LangChain + HuggingFace Transformers RAG 實作 ✅
+- **商業情境**：使用 Google Colab + HuggingFace 建立 RAG 系統
+- **實作內容**：
+  - HuggingFace Transformers Pipeline 基礎
+  - LangChain + HuggingFace 整合
+  - ChatHuggingFace 對話模型應用
+  - PDF 文件載入與處理
+  - FAISS 向量資料庫建立
+  - RAG Chain 完整實作
+- **Notebook 範例**：
+  - `week05_langchain/langchain_rag_HF_transformers.ipynb` - 完整 RAG 流程
+  - `week05_langchain/transformer_test.ipynb` - Transformers 測試
+- **使用模型**：google/gemma-3-1b-it (Colab GPU 環境)
 
 #### Week 6: RAG 系統實作
 - Vector Store 整合
@@ -217,6 +229,13 @@ python week03_prompt_engineering/01_prompting_basics.py
 |------|---------|----------|
 | `week04_rag/rag_test.py` | Gemma3:1b RAG 示範（含無 RAG 比較） | 客服知識庫、內部文件搜尋 |
 
+### Week 5 程式碼 - LangChain + HuggingFace RAG
+
+| 檔案 | 功能說明 | 商業應用 |
+|------|---------|----------|
+| `langchain_rag_HF_transformers.ipynb` | 完整 RAG 系統實作：PDF 載入、文件分割、向量化、檢索、問答 | 企業知識庫、文件問答系統 |
+| `transformer_test.ipynb` | HuggingFace Transformers Pipeline 基礎測試 | 模型測試與評估 |
+
 ## 📖 學習資源
 
 ### 官方文檔
@@ -275,9 +294,10 @@ ollama list
 |------|------|------|------|
 | Week 1 | 環境設置與入門 | ✅ 完成 | 已提供簡化版程式 |
 | Week 2 | LLM 概念講解 | ✅ 完成 | 參考 PDF 投影片 |
-| Week 3 | Prompt Engineering 實作 | 🔄 本週 | 使用簡化版範例 |
-| Week 4 | 專案提案 | ⏳ 下週 | 分組討論 |
-| Week 5-13 | 進階內容 | ⏳ 待開始 | 持續更新中 |
+| Week 3 | Prompt Engineering 實作 | ✅ 完成 | 使用簡化版範例 |
+| Week 4 | 專案提案 | ✅ 完成 | 分組討論 |
+| Week 5 | LangChain + HF RAG 實作 | ✅ 完成 | Colab Notebook 範例 |
+| Week 6-13 | 進階內容 | ⏳ 待開始 | 持續更新中 |
 
 ## 🤝 貢獻指南
 
@@ -300,5 +320,5 @@ ollama list
 
 ---
 
-**Last Updated**: 2025-09-24
-**Course Version**: 1.2.0
+**Last Updated**: 2025-10-08
+**Course Version**: 1.3.0
