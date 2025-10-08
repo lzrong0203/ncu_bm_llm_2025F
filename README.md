@@ -34,6 +34,10 @@ ncu_bm_llm_2025F/
 ├── week05_langchain/           # Week 5: LangChain + HF Transformers RAG
 │   ├── langchain_rag_HF_transformers.ipynb  # 完整 RAG 實作
 │   └── transformer_test.ipynb  # Transformers 基礎測試
+├── week06_advanced_rag/        # Week 6: Output Parser 進階 RAG
+│   ├── week06_output_parser_rag.ipynb  # Output Parser + RAG 完整教學
+│   ├── langchain_rag_HF_transformers.ipynb  # 量化 RAG 範例
+│   └── 02_prompt_templates.py  # Output Parser 參考程式
 ├── docs/                        # 課程文檔
 │   ├── week01_slides.md
 │   ├── week02_slides.md
@@ -167,10 +171,19 @@ python week03_prompt_engineering/01_prompting_basics.py
   - `week05_langchain/transformer_test.ipynb` - Transformers 測試
 - **使用模型**：google/gemma-3-1b-it (Colab GPU 環境)
 
-#### Week 6: RAG 系統實作
-- Vector Store 整合
-- Retrieval Chain
-- 問答系統開發
+#### Week 6: Output Parser 進階 RAG 應用 ✅
+- **商業情境**：結構化 RAG 輸出與商業應用
+- **實作內容**：
+  - 模型量化技術（4-bit BitsAndBytes）
+  - Output Parser 完整教學（Str/List/JSON/Pydantic）
+  - RAG + Parser 整合應用
+  - 結構化輸出設計（論文分析、技術問答、方法比較）
+  - 商業案例實戰（智慧客服系統）
+  - 錯誤處理與重試機制
+- **Notebook 範例**：
+  - `week06_advanced_rag/week06_output_parser_rag.ipynb` - 完整教學
+  - `week06_advanced_rag/langchain_rag_HF_transformers.ipynb` - 量化 RAG 範例
+- **使用模型**：google/gemma-3-1b-it (4-bit 量化)
 
 #### Week 7: Web UI 開發
 - Streamlit/Gradio 整合
@@ -236,6 +249,14 @@ python week03_prompt_engineering/01_prompting_basics.py
 | `langchain_rag_HF_transformers.ipynb` | 完整 RAG 系統實作：PDF 載入、文件分割、向量化、檢索、問答 | 企業知識庫、文件問答系統 |
 | `transformer_test.ipynb` | HuggingFace Transformers Pipeline 基礎測試 | 模型測試與評估 |
 
+### Week 6 程式碼 - Output Parser 進階 RAG
+
+| 檔案 | 功能說明 | 商業應用 |
+|------|---------|----------|
+| `week06_output_parser_rag.ipynb` | 量化技術、Output Parser 完整教學、RAG+Parser 整合、商業案例 | 智慧客服、論文分析、技術問答系統 |
+| `langchain_rag_HF_transformers.ipynb` | 4-bit 量化 RAG 範例 | 記憶體優化、大模型部署 |
+| `02_prompt_templates.py` | Output Parser 參考範例（Python 版） | 結構化輸出設計參考 |
+
 ## 📖 學習資源
 
 ### 官方文檔
@@ -297,7 +318,8 @@ ollama list
 | Week 3 | Prompt Engineering 實作 | ✅ 完成 | 使用簡化版範例 |
 | Week 4 | 專案提案 | ✅ 完成 | 分組討論 |
 | Week 5 | LangChain + HF RAG 實作 | ✅ 完成 | Colab Notebook 範例 |
-| Week 6-13 | 進階內容 | ⏳ 待開始 | 持續更新中 |
+| Week 6 | Output Parser 進階 RAG | ✅ 完成 | 量化技術 + 結構化輸出 |
+| Week 7-13 | 進階內容 | ⏳ 待開始 | 持續更新中 |
 
 ## 🤝 貢獻指南
 
