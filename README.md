@@ -269,6 +269,7 @@ python week03_prompt_engineering/01_prompting_basics.py
 - Week 2: `LLM_No_framework.pdf`（概念講解）
 - Week 3: `docs/week03_slides.md`（實作指南）
 - Week 4: `docs/week04_slides.md`（RAG 暖身與提案）
+- Week 13 (11/26): [期末專案展示](https://docs.google.com/presentation/d/1kyOflEeO4p59ixA1ijgxJWW3kiY8SxEyhcs7od0p0F4/edit?slide=id.p17#slide=id.p17)
 
 ### 參考資源
 - 📂 [Dr. Steve Lai 的 GitHub](https://github.com/lzrong0203/iSpan_LLM09)
@@ -319,7 +320,8 @@ ollama list
 | Week 4 | 專案提案 | ✅ 完成 | 分組討論 |
 | Week 5 | LangChain + HF RAG 實作 | ✅ 完成 | Colab Notebook 範例 |
 | Week 6 | Output Parser 進階 RAG | ✅ 完成 | 量化技術 + 結構化輸出 |
-| Week 7-13 | 進階內容 | ⏳ 待開始 | 持續更新中 |
+| Week 7-12 | 進階內容 | ⏳ 待開始 | 持續更新中 |
+| Week 13 | 期末專案展示 | ✅ 完成 | 11/26 投影片已更新 |
 
 ## 🤝 貢獻指南
 
@@ -342,5 +344,5 @@ ollama list
 
 ---
 
-**Last Updated**: 2025-10-08
+**Last Updated**: 2025-11-27
 **Course Version**: 1.3.0
