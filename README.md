@@ -330,11 +330,11 @@ ollama list
 
 | 組別 | 專案主題 | GitHub / 相關連結 |
 |------|---------|------------------|
-| Group 1 | Daily News | [Repo](TBD) |
-| Group 2 | C2C網購爭議協助幫手 | [Repo](TBD) |
-| Group 3 | (待更新) | [Repo](TBD) |
-| Group 4 | 事實錨定的行銷文案生成器 | [Repo](TBD) |
-| Group 5 | Foodie Hunter 餐廳智能推薦系統 | [Repo](TBD) |
+| Group 1 | Daily News | [Repo](https://github.com/zjahseh/daily_news) |
+| Group 2 | C2C網購爭議協助幫手 | [Repo](https://github.com/winnie600/shopping-dispute-helper) |
+| Group 3 | 透過 LLM 解讀聯準會報告預測公債殖利率 | [Repo](https://github.com/lin974/Group3) |
+| Group 4 | 事實錨定的行銷文案生成器 | [Repo](https://github.com/jimmy901213-sudo/LLM) |
+| Group 5 | Foodie Hunter 餐廳智能推薦系統 | [Repo](https://github.com/Jasmine200407/semantic-memory-recommender) |
 
 ## 🤝 貢獻指南
 
