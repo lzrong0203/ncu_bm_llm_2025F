@@ -269,7 +269,7 @@ python week03_prompt_engineering/01_prompting_basics.py
 - Week 2: `LLM_No_framework.pdf`（概念講解）
 - Week 3: `docs/week03_slides.md`（實作指南）
 - Week 4: `docs/week04_slides.md`（RAG 暖身與提案）
-- Week 13 (11/26): [期末專案展示](https://docs.google.com/presentation/d/1kyOflEeO4p59ixA1ijgxJWW3kiY8SxEyhcs7od0p0F4/edit?slide=id.p17#slide=id.p17)
+- Week 13 (11/26): [LLM Life Cycle](https://docs.google.com/presentation/d/1kyOflEeO4p59ixA1ijgxJWW3kiY8SxEyhcs7od0p0F4/edit?usp=sharing)
 
 ### 參考資源
 - 📂 [Dr. Steve Lai 的 GitHub](https://github.com/lzrong0203/iSpan_LLM09)
@@ -320,8 +320,21 @@ ollama list
 | Week 4 | 專案提案 | ✅ 完成 | 分組討論 |
 | Week 5 | LangChain + HF RAG 實作 | ✅ 完成 | Colab Notebook 範例 |
 | Week 6 | Output Parser 進階 RAG | ✅ 完成 | 量化技術 + 結構化輸出 |
-| Week 7-12 | 進階內容 | ⏳ 待開始 | 持續更新中 |
-| Week 13 | 期末專案展示 | ✅ 完成 | 11/26 投影片已更新 |
+| Week 7-12 | 進階內容 | ⏳ 進行中 | 持續更新中 |
+| Week 13 (11/26) | LLM Life Cycle | ✅ 完成 | [投影片連結](https://docs.google.com/presentation/d/1kyOflEeO4p59ixA1ijgxJWW3kiY8SxEyhcs7od0p0F4/edit?usp=sharing) |
+| Week 15 (12/10) | 期末專案展示 | 📅 預定 | 5組專案發表 |
+
+## 🎓 期末專案 (Student Projects)
+
+期末發表時間：2025/12/10
+
+| 組別 | 專案主題 | GitHub / 相關連結 |
+|------|---------|------------------|
+| Group 1 | Daily News | [Repo](TBD) |
+| Group 2 | C2C網購爭議協助幫手 | [Repo](TBD) |
+| Group 3 | (待更新) | [Repo](TBD) |
+| Group 4 | 事實錨定的行銷文案生成器 | [Repo](TBD) |
+| Group 5 | Foodie Hunter 餐廳智能推薦系統 | [Repo](TBD) |
 
 ## 🤝 貢獻指南
 
