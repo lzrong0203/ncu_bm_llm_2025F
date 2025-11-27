@@ -28,14 +28,25 @@ ncu_bm_llm_2025F/
 │   ├── 01_prompting_basics.py  # 提示技巧展示
 │   ├── 02_structured_output.py  # 結構化輸出
 │   ├── 03_smart_form_processor.py  # 智慧表單處理
-│   └── 04_openai_agent_basic.py  # API 比較
+│   ├── 04_openai_agent_basic.py  # API 比較
+│   └── rag_test.py             # RAG 測試
 ├── week04_rag/                 # Week 4: RAG 實作暖身
-│   └── rag_test.py             # Gemma3:1b RAG + baseline 比較
+│   ├── data/                   # 測試資料
+│   ├── demo_rag.txt            # 範例文件
+│   ├── faiss_rag.py            # FAISS 向量資料庫範例
+│   ├── rag_test.py             # Gemma3:1b RAG + baseline 比較
+│   └── simple_rag.py           # 簡易 RAG 實作
 ├── week05_langchain/           # Week 5: LangChain + HF Transformers RAG
+│   ├── 01_langchain_basics.py  # LangChain 基礎
+│   ├── 02_prompt_templates.py  # Prompt Templates
+│   ├── 03_memory_management.py # Memory 管理
+│   ├── 04_ollama_integration.py # Ollama 整合
+│   ├── 05_business_chatbot.py  # 商業 Chatbot
 │   ├── langchain_rag_HF_transformers.ipynb  # 完整 RAG 實作
-│   └── transformer_test.ipynb  # Transformers 基礎測試
+│   └── ...                     # 其他資源 (簡報、資料)
 ├── week06_advanced_rag/        # Week 6: Output Parser 進階 RAG
 │   ├── week06_output_parser_rag.ipynb  # Output Parser + RAG 完整教學
+│   ├── week06_output_parser_rag_live.ipynb # 課堂實作版
 │   ├── langchain_rag_HF_transformers.ipynb  # 量化 RAG 範例
 │   └── 02_prompt_templates.py  # Output Parser 參考程式
 ├── docs/                        # 課程文檔
@@ -44,8 +55,9 @@ ncu_bm_llm_2025F/
 │   ├── week03_slides.md
 │   └── week04_slides.md
 ├── LLM_No_framework.pdf        # Week 2 概念投影片
-├── utils/                       # 工具函數
+├── Memory&Tool.ipynb           # Memory & Tool 範例
 ├── requirements.txt             # Python 套件需求
+├── requirements_lock.txt        # 鎖定版本需求
 └── README.md                    # 本文件
 ```
 
