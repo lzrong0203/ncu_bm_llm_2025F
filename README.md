@@ -332,7 +332,7 @@ ollama list
 | Week 4 | 專案提案 | ✅ 完成 | 分組討論 |
 | Week 5 | LangChain + HF RAG 實作 | ✅ 完成 | Colab Notebook 範例 |
 | Week 6 | Output Parser 進階 RAG | ✅ 完成 | 量化技術 + 結構化輸出 |
-| Week 7-12 | 進階內容 | ⏳ 進行中 | 持續更新中 |
+| Week 7-12 | 進階內容 | ✅ 完成 | 進階主題與專案開發 |
 | Week 13 (11/26) | LLM Life Cycle | ✅ 完成 | [投影片連結](https://docs.google.com/presentation/d/1kyOflEeO4p59ixA1ijgxJWW3kiY8SxEyhcs7od0p0F4/edit?usp=sharing) |
 | Week 15 (12/10) | 期末專案展示 | 📅 預定 | 5組專案發表 |
 
